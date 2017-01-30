@@ -51,18 +51,18 @@ cd ~;
 #wget http://www.iaas.uni-stuttgart.de/OpenTOSCA/third-party/wso2bps-2.1.2.zip;
 #unzip -qo wso2bps-2.1.2.zip;
 #mv wso2bps-2.1.2/ wso2bps/
-wget https://www.dropbox.com/s/hy0r8fv1qkpqhob/wso2bps-3.6.0.zip;
+wget https://www.dropbox.com/s/6r4uubraxwss5lo/wso2bps-3.6.0.zip;
 unzip -qo wso2bps-3.6.0.zip;
 mv wso2bps-3.6.0/ wso2bps/
 chmod +x wso2bps/bin/wso2server.sh;
 echo "\n\n### REST Extension"
 cd ~;
-wget $SCRIPTPATH/third-party/bpel4restlight1.1.1.jar;
-mv bpel4restlight1.1.1.jar wso2bps/repository/components/lib/;
+#wget $SCRIPTPATH/third-party/bpel4restlight1.1.1.jar;
+#mv bpel4restlight1.1.1.jar wso2bps/repository/components/lib/;
 echo "\n\n### Configure REST Extension"
 cd ~;
-wget $SCRIPTPATH/third-party/bps.xml;
-mv bps.xml wso2bps/repository/conf/bps.xml;
+#wget $SCRIPTPATH/third-party/bps.xml;
+#mv bps.xml wso2bps/repository/conf/bps.xml;
 echo "\n\n### Install OpenTOSCA"
 cd ~;
 wget $BINPATH/OpenTOSCA.zip;
