@@ -56,7 +56,7 @@ cd ~;
 #mv wso2bps-3.6.0/ wso2bps/
 wget https://www.dropbox.com/s/c7gdrgm82psaxdv/wso2bps-3.2.0.zip;
 unzip -qo wso2bps-3.2.0.zip;
-mv wso2bps-3.6.0/ wso2bps/
+mv wso2bps-3.2.0/ wso2bps/
 chmod +x wso2bps/bin/wso2server.sh;
 echo "\n\n### REST Extension"
 cd ~;
