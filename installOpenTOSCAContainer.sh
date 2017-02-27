@@ -24,10 +24,13 @@ echo "\n\n### Set CATALINA_OPTS"
 sudo sh -c "echo 'CATALINA_OPTS=\"-Xms512m -Xmx1024m\"' >> /etc/default/tomcat7";
 echo "\n\n### Tomcat User Settings"
 cd ~;
-wget $SCRIPTPATH/third-party/tomcat-users.xml;
+wget https://raw.githubusercontent.com/rharish100193/opentosca/master/tomcat-users.xml;
 wget $SCRIPTPATH/third-party/server.xml;
 sudo mv ./tomcat-users.xml /var/lib/tomcat7/conf/tomcat-users.xml;
 sudo mv ./server.xml /var/lib/tomcat7/conf/server.xml;
 echo "\n\n### Install OpenTOSCAContainer.war"
-wget $BINPATH/admin.war;
-sudo mv ./admin.war /var/lib/tomcat7/webapps/admin.war;
+wget https://www.dropbox.com/s/e9peufpl69aas19/OpenTOSCAContainer.war; 
+sudo mv ./OpenTOSCAContainer.war /var/lib/tomcat7/webapps/OpenTOSCAContainer.war;
+sudo mkdir /home/ubuntu/keyDB;
+sudo chmod -R 777 /home/ubuntu/keyDB;
+sudo service tomcat7 start;
